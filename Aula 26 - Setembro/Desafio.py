@@ -31,11 +31,9 @@ Linha:
 
 import os
 
-# Função para limpar a tela do console (funciona em Windows, Linux e Mac)
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-# Função para exibir a matriz e as somas
 def exibir_matriz(matriz, somas):
     print("    Lista A")
     print("    ---------------------------------")
@@ -44,7 +42,7 @@ def exibir_matriz(matriz, somas):
     for i, linha in enumerate(matriz):
         print(f"\n {i+1}  |", end="")
         for numero in linha:
-            print(f"{numero:^5}|", end="") # Centraliza o número em 5 espaços
+            print(f"{numero:^5}|", end="")
     print("\n    +-------------------------------+", end="")
     print("\nsoma   ", end="")
     for soma in somas:
@@ -53,8 +51,7 @@ def exibir_matriz(matriz, somas):
 
 # --- Programa Principal ---
 
-# 1. Inicializa a matriz 3x6 com zeros
-# É uma lista de 3 listas, cada uma com 6 zeros.
+
 matriz_A = [
     [0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0],
@@ -64,9 +61,9 @@ matriz_A = [
 # Loop principal para interação com o usuário
 while True:
     # 2. Calcula a soma das colunas
-    soma_colunas = [0] * 6 # [0, 0, 0, 0, 0, 0]
-    for j in range(6): # Itera sobre as colunas (0 a 5)
-        for i in range(3): # Itera sobre as linhas (0 a 2)
+    soma_colunas = [0] * 6 
+    for j in range(6): 
+        for i in range(3): 
             soma_colunas[j] += matriz_A[i][j]
 
     # 3. Exibe o estado atual da matriz
@@ -87,7 +84,6 @@ while True:
 
         # 5. Valida as entradas e atualiza a matriz
         if 1 <= linha <= 3 and 1 <= coluna <= 6:
-            # Subtrai 1 para converter para índices de lista (0-2 e 0-5)
             matriz_A[linha - 1][coluna - 1] = numero
         else:
             input("\nCoordenadas inválidas! Pressione Enter para tentar novamente.")
