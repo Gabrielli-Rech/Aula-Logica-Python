@@ -1,7 +1,7 @@
 # 🧠 Aula de Lógica de Programação com Python
 
 <p align="center">
-  <img src="logoP.png" alt="Logo Aula Lógica Python" width="200">
+  <img src="logoP.jpg" alt="Logo Aula Lógica Python" width="200">
 </p>
 
 Bem-vindo ao repositório **Aula-Logica-Python**, um projeto desenvolvido para ensinar e praticar lógica de programação utilizando a linguagem Python. Ideal para iniciantes que desejam entender os conceitos fundamentais da programação de forma prática e objetiva.
